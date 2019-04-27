@@ -1,0 +1,1558 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>11.5、并行测试 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-back-to-top-button/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-chapter-fold/chapter-fold.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-insert-logo/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="chapter11.6.html" />
+    
+    
+    <link rel="prev" href="chapter11.4.html" />
+    
+
+    <style>
+    @media only screen and (max-width: 640px) {
+        .book-header .hidden-mobile {
+            display: none;
+        }
+    }
+    </style>
+    <script>
+        window["gitbook-plugin-github-buttons"] = {"buttons":[{"user":"xiaolanyun","repo":"DevOps_wiki","type":"star","size":"30px"}]};
+    </script>
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="chapter1.html">
+            
+                <a href="chapter1.html">
+            
+                    
+                    1、设计思路
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="chapter1.1.html">
+            
+                <a href="chapter1.1.html">
+            
+                    
+                    1.1、参考文献
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="chapter2.html">
+            
+                <a href="chapter2.html">
+            
+                    
+                    2、服务器
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="chapter2.1.html">
+            
+                <a href="chapter2.1.html">
+            
+                    
+                    2.1、配置静态ip
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="chapter2.2.html">
+            
+                <a href="chapter2.2.html">
+            
+                    
+                    2.2、Centos7扩容
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="chapter3.html">
+            
+                <a href="chapter3.html">
+            
+                    
+                    3、mysql
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="chapter3.1.html">
+            
+                <a href="chapter3.1.html">
+            
+                    
+                    3.1、初始化登录
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="chapter3.2.html">
+            
+                <a href="chapter3.2.html">
+            
+                    
+                    3.2、mysql5.7&8.0设置用户密码
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="chapter3.3.html">
+            
+                <a href="chapter3.3.html">
+            
+                    
+                    3.3、mysql5.7&8.0开启远程登录权限
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="chapter3.4.html">
+            
+                <a href="chapter3.4.html">
+            
+                    
+                    3.4、mysql8.0驱动
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="chapter3.5.html">
+            
+                <a href="chapter3.5.html">
+            
+                    
+                    3.5、mysql更改端口号
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="chapter4.html">
+            
+                <a href="chapter4.html">
+            
+                    
+                    4、mongodb
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="chapter4.1.html">
+            
+                <a href="chapter4.1.html">
+            
+                    
+                    4.1、安装部署
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="chapter4.2.html">
+            
+                <a href="chapter4.2.html">
+            
+                    
+                    4.2、集群测试
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="chapter5.html">
+            
+                <a href="chapter5.html">
+            
+                    
+                    5、redis
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="chapter5.1.html">
+            
+                <a href="chapter5.1.html">
+            
+                    
+                    5.1安装部署
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="chapter5.2.html">
+            
+                <a href="chapter5.2.html">
+            
+                    
+                    5.2、集群测试
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="chapter5.3.html">
+            
+                <a href="chapter5.3.html">
+            
+                    
+                    5.3、配置服务
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="chapter6.html">
+            
+                <a href="chapter6.html">
+            
+                    
+                    6、Nexus
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="chapter6.1.html">
+            
+                <a href="chapter6.1.html">
+            
+                    
+                    6.1、windos&linux_maven
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="chapter6.2.html">
+            
+                <a href="chapter6.2.html">
+            
+                    
+                    6.2、Nexus
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="chapter7.html">
+            
+                <a href="chapter7.html">
+            
+                    
+                    7、ZenTao
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="chapter7.1.html">
+            
+                <a href="chapter7.1.html">
+            
+                    
+                    7.1、安装部署
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="chapter7.2.html">
+            
+                <a href="chapter7.2.html">
+            
+                    
+                    7.2、禅道部分概念释义
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="chapter8.html">
+            
+                <a href="chapter8.html">
+            
+                    
+                    8、jenkins
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="chapter8.1.html">
+            
+                <a href="chapter8.1.html">
+            
+                    
+                    8.1、git
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2" data-path="chapter8.2.html">
+            
+                <a href="chapter8.2.html">
+            
+                    
+                    8.2、gradle
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.3" data-path="chapter8.3.html">
+            
+                <a href="chapter8.3.html">
+            
+                    
+                    8.3、sdk
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.4" data-path="chapter8.4.html">
+            
+                <a href="chapter8.4.html">
+            
+                    
+                    8.4、jenkins安装部署
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="chapter9.html">
+            
+                <a href="chapter9.html">
+            
+                    
+                    9、Sonar
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" data-path="chapter9.1.html">
+            
+                <a href="chapter9.1.html">
+            
+                    
+                    9.1、SonarQube
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.2" data-path="chapter9.2.html">
+            
+                <a href="chapter9.2.html">
+            
+                    
+                    9.2、配置服务
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.3" data-path="chapter9.3.html">
+            
+                <a href="chapter9.3.html">
+            
+                    
+                    9.3、SonarQubeScanner
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.4" data-path="chapter9.4.html">
+            
+                <a href="chapter9.4.html">
+            
+                    
+                    9.4、集成
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="chapter10.html">
+            
+                <a href="chapter10.html">
+            
+                    
+                    10、Android本地商城被测件
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1" data-path="chapter10.1.html">
+            
+                <a href="chapter10.1.html">
+            
+                    
+                    10.1、Android本地商城需求
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.2" data-path="chapter10.2.html">
+            
+                <a href="chapter10.2.html">
+            
+                    
+                    10.2、Android本地商城功能设计
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.3" data-path="chapter10.3.html">
+            
+                <a href="chapter10.3.html">
+            
+                    
+                    10.3、Android本地商城业务及数据库设计
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.4" data-path="chapter10.4.html">
+            
+                <a href="chapter10.4.html">
+            
+                    
+                    10.4、Android本地商城UI设计
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.5" data-path="chapter10.5.html">
+            
+                <a href="chapter10.5.html">
+            
+                    
+                    10.5、Android本地商城托管地址
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.6" data-path="chapter10.6.html">
+            
+                <a href="chapter10.6.html">
+            
+                    
+                    10.6、Android自动化构建
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="chapter11.html">
+            
+                <a href="chapter11.html">
+            
+                    
+                    11、Appium_自动化测试框架
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.12.1" data-path="chapter11.1.html">
+            
+                <a href="chapter11.1.html">
+            
+                    
+                    11.1、设计思路
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.2" data-path="chapter11.2.html">
+            
+                <a href="chapter11.2.html">
+            
+                    
+                    11.2、环境
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.3" data-path="chapter11.3.html">
+            
+                <a href="chapter11.3.html">
+            
+                    
+                    11.3、自动化测试框架
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.4" data-path="chapter11.4.html">
+            
+                <a href="chapter11.4.html">
+            
+                    
+                    11.4、自动化测试框架托管地址
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.12.5" data-path="chapter11.5.html">
+            
+                <a href="chapter11.5.html">
+            
+                    
+                    11.5、并行测试
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.6" data-path="chapter11.6.html">
+            
+                <a href="chapter11.6.html">
+            
+                    
+                    11.6、并行测试框架托管地址
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.7" data-path="chapter11.7.html">
+            
+                <a href="chapter11.7.html">
+            
+                    
+                    11.7、持续集成
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="chapter12.html">
+            
+                <a href="chapter12.html">
+            
+                    
+                    12、Maxim_Monkey
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.13.1" data-path="chapter12.1.html">
+            
+                <a href="chapter12.1.html">
+            
+                    
+                    12.1、Maxim_Monkey使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.2" data-path="chapter12.2.html">
+            
+                <a href="chapter12.2.html">
+            
+                    
+                    12.2、Maxim_Monkey托管地址
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.3" data-path="chapter12.3.html">
+            
+                <a href="chapter12.3.html">
+            
+                    
+                    12.3、持续集成
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="chapter13.html">
+            
+                <a href="chapter13.html">
+            
+                    
+                    13、postman&newman
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.14.1" data-path="chapter13.1.html">
+            
+                <a href="chapter13.1.html">
+            
+                    
+                    13.1、postman接口测试
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14.2" data-path="chapter13.2.html">
+            
+                <a href="chapter13.2.html">
+            
+                    
+                    13.2、newman
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14.3" data-path="chapter13.3.html">
+            
+                <a href="chapter13.3.html">
+            
+                    
+                    13.3、接口自动化示例托管地址
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14.4" data-path="chapter13.4.html">
+            
+                <a href="chapter13.4.html">
+            
+                    
+                    13.4、持续集成
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="chapter14.html">
+            
+                <a href="chapter14.html">
+            
+                    
+                    14、open-falcon
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.15.1" data-path="chapter14.1.html">
+            
+                <a href="chapter14.1.html">
+            
+                    
+                    14.1、环境
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15.2" data-path="chapter14.2.html">
+            
+                <a href="chapter14.2.html">
+            
+                    
+                    14.2、单机&分布式安装说明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15.3" data-path="chapter14.3.html">
+            
+                <a href="chapter14.3.html">
+            
+                    
+                    14.3、dashboard
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15.4" data-path="chapter14.4.html">
+            
+                <a href="chapter14.4.html">
+            
+                    
+                    14.4、Agent
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15.5" data-path="chapter14.5.html">
+            
+                <a href="chapter14.5.html">
+            
+                    
+                    14.5、Transfer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15.6" data-path="chapter14.6.html">
+            
+                <a href="chapter14.6.html">
+            
+                    
+                    14.6、Graph
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15.7" data-path="chapter14.7.html">
+            
+                <a href="chapter14.7.html">
+            
+                    
+                    14.7、API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15.8" data-path="chapter14.8.html">
+            
+                <a href="chapter14.8.html">
+            
+                    
+                    14.8、HBS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15.9" data-path="chapter14.9.html">
+            
+                <a href="chapter14.9.html">
+            
+                    
+                    14.9、Judge
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15.10" data-path="chapter14.10.html">
+            
+                <a href="chapter14.10.html">
+            
+                    
+                    14.10、Alarm
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15.11" data-path="chapter14.11.html">
+            
+                <a href="chapter14.11.html">
+            
+                    
+                    14.11、Nodata
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15.12" data-path="chapter14.12.html">
+            
+                <a href="chapter14.12.html">
+            
+                    
+                    14.12、Aggregator
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="chapter15.html">
+            
+                <a href="chapter15.html">
+            
+                    
+                    15、gitbook_wiki
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.16.1" data-path="chapter15.1.html">
+            
+                <a href="chapter15.1.html">
+            
+                    
+                    15.1、wiki搭建使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="chapter16.html">
+            
+                <a href="chapter16.html">
+            
+                    
+                    16、前端
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.17.1" data-path="chapter16.1.html">
+            
+                <a href="chapter16.1.html">
+            
+                    
+                    16.1、UI设计
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17.2" data-path="chapter16.2.html">
+            
+                <a href="chapter16.2.html">
+            
+                    
+                    16.2、前端托管地址
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="chapter17.html">
+            
+                <a href="chapter17.html">
+            
+                    
+                    17、附加说明
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.18.1" data-path="chapter17.1.html">
+            
+                <a href="chapter17.1.html">
+            
+                    
+                    17.1、服务器配置一览
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >11.5、并行测试</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h3 id="115&#x3001;&#x5E76;&#x884C;&#x6D4B;&#x8BD5;">11.5&#x3001;&#x5E76;&#x884C;&#x6D4B;&#x8BD5;</h3>
+<p>1&#x3001;&#x5BF9;&#x6846;&#x67B6;&#x8FDB;&#x4E00;&#x6B65;&#x6539;&#x8FDB;&#xFF0C;&#x4F7F;&#x5176;&#x5B9E;&#x73B0;&#x5E76;&#x884C;&#x6D4B;&#x8BD5;&#xFF0C;&#x7531;&#x4E8E;&#x7269;&#x7406;&#x673A;&#x8D44;&#x6E90;&#x6709;&#x9650;&#xFF0C;&#x6682;&#x65F6;&#x53EA;&#x8FDB;&#x884C;&#x4E24;&#x53F0;&#x5B89;&#x5353;&#x8BBE;&#x5907;&#x5E76;&#x884C;&#x6D4B;&#x8BD5;&#x3002;</p>
+<p>&#x5BF9;BasePerpare.java&#x8FDB;&#x884C;&#x4FEE;&#x6539;&#xFF0C;&#x589E;&#x52A0;&#x8BBE;&#x5907;udid&#x7684;&#x83B7;&#x53D6;&#x4E0E;&#x81EA;&#x52A8;&#x8BBE;&#x7F6E;&#x3002;</p>
+<p>&#x4EE5;selenium-server-standalone&#x4E3A;&#x652F;&#x6491;&#xFF0C;&#x7531;selenium-grid&#x5206;&#x914D;&#x6D4B;&#x8BD5;&#x3002;</p>
+<p>&#x5229;&#x7528;testng&#x8FDB;&#x884C;xml&#x4F20;&#x53C2;&#xFF0C;&#x8BBE;&#x7F6E;&#x6D4B;&#x8BD5;&#x7528;&#x4F8B;&#x6267;&#x884C;&#x673A;&#x7684;udid&#xFF0C;&#x5B9E;&#x73B0;&#x5E76;&#x884C;&#x6D4B;&#x8BD5;&#x3002;</p>
+<hr>
+<p>2&#x3001;windos&#x4E0B;&#x5E76;&#x884C;&#x6D4B;&#x8BD5;bat&#x811A;&#x672C;&#x7F16;&#x5199;</p>
+<p>&#x8FD0;&#x884C;&#x987A;&#x5E8F;Grid-&#x300B;appiumA,appiumB</p>
+<p><img src="image/11.5.0.PNG" alt=""></p>
+<p>2.1&#x3001;&#x542F;&#x52A8;AppiumGrid&#x670D;&#x52A1;</p>
+<pre><code>@echo off
+
+echo &#x6B63;&#x5728;&#x542F;&#x52A8;Appium grid&#x670D;&#x52A1;&#xFF0C;&#x8BF7;&#x7A0D;&#x7B49;&#x3002;
+
+echo &#x542F;&#x52A8;&#x5B8C;&#x6BD5;&#x4E4B;&#x540E;&#xFF0C;&#x8BF7;&#x4E0D;&#x8981;&#x5173;&#x95ED;&#x6B64;&#x7A97;&#x53E3;&#x3002;
+
+echo &#x5F53;&#x4F60;&#x770B;&#x5230;&quot;Selenium Grid hub is up and running&quot;&#x5219;&#x8868;&#x793A;&#x542F;&#x52A8;&#x6210;&#x529F;&#x3002;
+
+java -jar selenium-server-standalone-2.53.0.jar -role hub -port 4444
+</code></pre><p>2.2&#x3001;&#x542F;&#x52A8;AppiumServer[A]</p>
+<pre><code>@echo off
+
+echo &#x542F;&#x52A8;appium server&#x4E2D;&#xFF0C;&#x8BF7;&#x4E0D;&#x8981;&#x5173;&#x95ED;&#x6B64;&#x7A97;&#x53E3;&#x3002;
+
+appium -a 127.0.0.1 -p 4723 -bp 4724   --selendroid-port 8090 --chrom edriver-port 9515 --session-override --nodeconfig nodeconfig_1.json
+</code></pre><p>2.3&#x3001;&#x542F;&#x52A8;AppiumServer[B]</p>
+<pre><code>@echo off
+
+echo &#x542F;&#x52A8;appium server&#x4E2D;&#xFF0C;&#x8BF7;&#x4E0D;&#x8981;&#x5173;&#x95ED;&#x6B64;&#x7A97;&#x53E3;&#x3002;
+
+appium -a 127.0.0.1 -p 4725 -bp 4726   --selendroid-port 8091 --chromedriver-port 9516 --session-override --nodeconfig nodeconfig_2.json
+</code></pre><p>2.4&#x3001;nodeconfig_1.json</p>
+<pre><code>{
+    &quot;capabilities&quot;:
+    [
+        {
+        &quot;browserName&quot;: &quot;zuk&quot;,
+        &quot;version&quot;:&quot;6.0.1&quot;,
+        &quot;maxInstances&quot;: 1,
+        &quot;platform&quot;:&quot;WINDOWS&quot;
+        }
+    ],
+    &quot;configuration&quot;:
+    {
+        &quot;cleanUpCycle&quot;:2000,
+        &quot;timeout&quot;:30000,
+        &quot;proxy&quot;: &quot;org.openqa.grid.selenium.proxy.DefaultRemoteProxy&quot;,
+        &quot;url&quot;:&quot;http://127.0.0.1:4723/wd/hub&quot;,
+        &quot;host&quot;: &quot;127.0.0.1&quot;,
+        &quot;port&quot;: 4723,
+        &quot;maxSession&quot;: 1,
+        &quot;register&quot;: true,
+        &quot;registerCycle&quot;: 5000,
+        &quot;hubPort&quot;: 4444,
+        &quot;hubHost&quot;: &quot;127.0.0.1&quot;
+    }
+}
+</code></pre><p>2.5&#x3001;nodeconfig_2.json</p>
+<pre><code>{
+    &quot;capabilities&quot;:
+    [
+        {
+        &quot;browserName&quot;: &quot;redmi&quot;,
+        &quot;version&quot;:&quot;6.0.1&quot;,
+        &quot;maxInstances&quot;: 1,
+        &quot;platform&quot;:&quot;WINDOWS&quot;
+        }
+    ],
+    &quot;configuration&quot;:
+    {
+        &quot;cleanUpCycle&quot;:2000,
+        &quot;timeout&quot;:30000,
+        &quot;proxy&quot;: &quot;org.openqa.grid.selenium.proxy.DefaultRemoteProxy&quot;,
+        &quot;url&quot;:&quot;http://127.0.0.1:4725/wd/hub&quot;,
+        &quot;host&quot;: &quot;127.0.0.1&quot;,
+        &quot;port&quot;: 4725,
+        &quot;maxSession&quot;: 1,
+        &quot;register&quot;: true,
+        &quot;registerCycle&quot;: 5000,
+        &quot;hubPort&quot;: 4444,
+        &quot;hubHost&quot;: &quot;127.0.0.1&quot;
+    }
+}
+</code></pre><hr>
+<p>3&#x3001;linux&#x4E0B;shell&#x811A;&#x672C;&#x7F16;&#x5199;</p>
+<p>&#x5176;&#x4E2D;nodeconfig_1.json&#x548C;nodeconfig_2.json&#x5185;&#x5BB9;&#x4E0D;&#x53D8;</p>
+<p><img src="image/11.5.1.PNG" alt=""></p>
+<p>3.1&#x3001;appiumServiceA.sh</p>
+<pre><code>*#!/bin/bash*
+
+echo &#x542F;&#x52A8;appium server&#x4E2D;&#xFF0C;&#x8BF7;&#x4E0D;&#x8981;&#x5173;&#x95ED;&#x6B64;&#x7A97;&#x53E3;&#x3002;
+
+./appium-desktop-1.10.0-x86_64.AppImage -a 127.0.0.1 -p 4723 -bp 4724   --selendroid-port 8090 --chrom edriver-port 9515 --session-override --nodeconfig nodeconfig_1.json
+</code></pre><p>3.2&#x3001;appiumServiceB.sh</p>
+<pre><code>*#!/bin/bash*
+
+echo &#x542F;&#x52A8;appium server&#x4E2D;&#xFF0C;&#x8BF7;&#x4E0D;&#x8981;&#x5173;&#x95ED;&#x6B64;&#x7A97;&#x53E3;&#x3002;
+
+./appium-desktop-1.10.0-x86_64.AppImage -a 127.0.0.1 -p 4725 -bp 4726   --selendroid-port 8091 --chromedriver-port 9516 --session-override --nodeconfig nodeconfig_2.json
+</code></pre><p>3.3&#x3001;gridService.sh</p>
+<pre><code>*#!/bin/bash*
+
+echo &#x6B63;&#x5728;&#x542F;&#x52A8;Appium grid&#x670D;&#x52A1;&#xFF0C;&#x8BF7;&#x7A0D;&#x7B49;&#x3002;
+
+echo &#x542F;&#x52A8;&#x5B8C;&#x6BD5;&#x4E4B;&#x540E;&#xFF0C;&#x8BF7;&#x4E0D;&#x8981;&#x5173;&#x95ED;&#x6B64;&#x7A97;&#x53E3;&#x3002;
+
+echo &#x5F53;&#x4F60;&#x770B;&#x5230;&quot;Selenium Grid hub is up and running&quot;&#x5219;&#x8868;&#x793A;&#x542F;&#x52A8;&#x6210;&#x529F;&#x3002;
+
+java -jar selenium-server-standalone-2.53.0.jar -role hub -port 4444
+</code></pre><p>3.4&#x3001;shuoming.txt&#xFF0C;&#x65B9;&#x4FBF;&#x590D;&#x5236;&#x5F00;&#x542F;&#x670D;&#x52A1;</p>
+<pre><code>./gridService.sh
+./appiumServiceA.sh
+./appiumServiceB.sh
+</code></pre><hr>
+<p>4&#x3001;&#x5FEB;&#x901F;&#x4E0A;&#x624B;</p>
+<p>4.1&#x3001;&#x5F00;&#x542F;&#x670D;&#x52A1;&#x914D;&#x7F6E;</p>
+<p>&#x7531;&#x4E8E;windos&#x548C;centos&#x90FD;&#x5B89;&#x88C5;&#x7684;&#x662F;&#x684C;&#x9762;&#x7248;appium&#xFF0C;&#x6240;&#x4EE5;&#x914D;&#x7F6E;&#x53C2;&#x6570;&#x90E8;&#x5206;&#x90FD;&#x5728;appium&#x4E2D;&#x914D;&#x7F6E;&#xFF0C;&#x5373;&#x914D;&#x7F6E;&#x811A;&#x672C;&#x4E2D;4723&#x548C;4725&#x4E24;&#x4E2A;appium&#x670D;&#x52A1;&#xFF0C;&#x5E76;&#x8BBE;&#x7F6E;&#xFF0C;</p>
+<p><img src="image/11.5.2.PNG" alt=""></p>
+<p>&#x56FE;&#x4E2D;&#x76F4;&#x63A5;&#x8BBE;&#x7F6E;&#x4E86;node&#x914D;&#x7F6E;&#x4E3A;nodeconfig_1.json&#x548C;nodeconfig_2.json&#x662F;&#x56E0;&#x4E3A;&#x901A;&#x8FC7;&#x811A;&#x672C;&#x6253;&#x5F00;&#x65F6;Appium&#x9762;&#x677F;&#x65F6;&#x81EA;&#x52A8;&#x8BFB;&#x53D6;&#x5230;&#x811A;&#x672C;&#x4E2D;nodeconfig&#x8BBE;&#x7F6E;&#xFF0C;&#x6545;&#x4E0D;&#x9700;&#x914D;&#x7F6E;&#x8DEF;&#x5F84;&#x3002;</p>
+<p>&#x8FD0;&#x884C;&#x65F6;&#xFF0C;&#x5148;&#x542F;&#x52A8;Grid&#x811A;&#x672C;&#xFF0C;&#x518D;&#x542F;&#x52A8;appiumA,appiumB&#x4E24;&#x4E2A;&#x811A;&#x672C;&#xFF0C;&#x7136;&#x540E;&#x4F1A;&#x81EA;&#x52A8;&#x6253;&#x5F00;&#x684C;&#x9762;&#x7248;appium&#x4E24;&#x4E2A;&#x7A97;&#x53E3;&#xFF0C;&#x9009;&#x62E9;&#x4FDD;&#x5B58;&#x597D;&#x7684;4723&#x548C;4725&#x4E24;&#x4E2A;appium&#x670D;&#x52A1;&#x4F9D;&#x6B21;&#x542F;&#x52A8;&#x3002;<strong>&#x5FC5;&#x987B;&#x662F;&#x811A;&#x672C;&#x542F;&#x52A8;&#x9762;&#x677F;&#xFF0C;&#x70B9;&#x51FB;&#x8FD0;&#x884C;&#x4E24;&#x4E2A;Appium&#x670D;&#x52A1;&#x624D;&#x53EF;&#x4EE5;</strong></p>
+<p>&#x5373;&#x53EF;&#x8FDB;&#x884C;&#x6D4B;&#x8BD5;&#x3002;</p>
+<p>&#x8BF4;&#x660E;&#xFF1A;&#x8BBE;&#x5907;&#x540D;&#x79F0;&#x5728;nodeconfig_1.json&#x548C;nodeconfig_2.json&#x4E2D;&#x914D;&#x7F6E;</p>
+<pre><code>&quot;browserName&quot;: &quot;zuk&quot;,
+
+&quot;browserName&quot;: &quot;redmi&quot;
+</code></pre><hr>
+<p>&#x8BBE;&#x5907;udid&#x83B7;&#x53D6;</p>
+<pre><code>adb devices
+</code></pre><p>&#x8BBE;&#x5907;&#x7684;udid&#x5728;testng.xml&#x4E2D;&#x9700;&#x8981;&#x8FD0;&#x884C;&#x7684;&#x6D4B;&#x8BD5;&#x7528;&#x4F8B;&#x4E0B;&#x914D;&#x7F6E;&#xFF0C;&#x5982;</p>
+<pre><code>&lt;test name=&quot;&#x7BA1;&#x7406;&#x5458;&#x754C;&#x9762;&#x5207;&#x6362;&quot; preserve-order=&quot;true&quot;&gt;
+        &lt;parameter name=&quot;udid&quot; value=&quot;113a20777d33&quot;/&gt; 
+        &lt;parameter name=&quot;deviceName&quot; value=&quot;redmi&quot;/&gt;
+        &lt;packages&gt;
+            &lt;package name=&quot;com.xiaolanyun.appium.DataTest.testCase.RootNavigation&quot; /&gt;
+        &lt;/packages&gt;
+    &lt;/test&gt;
+    &lt;test name=&quot;&#x7BA1;&#x7406;&#x5458;&#x767B;&#x9646;&#x6DFB;&#x52A0;&#x4E70;&#x5BB6;&#x5356;&#x5BB6;&#x8D26;&#x6237;&#x5E76;&#x8D2D;&#x4E70;&#x5546;&#x54C1;&#x53D1;&#x8D27;&quot; preserve-order=&quot;true&quot;&gt;
+        &lt;parameter name=&quot;udid&quot; value=&quot;63a7b810&quot;/&gt;
+        &lt;parameter name=&quot;deviceName&quot; value=&quot;zuk&quot;/&gt;
+        &lt;packages&gt;
+            &lt;package name=&quot;com.xiaolanyun.appium.DataTest.testCase.RootAddUserAndBuyGoods&quot; /&gt;
+        &lt;/packages&gt;
+    &lt;/test&gt;
+</code></pre><hr>
+<p>4.2&#x3001;&#x6D4B;&#x8BD5;&#x7528;&#x4F8B;&#x7F16;&#x5199;&#x987A;&#x5E8F;&#xFF0C;&#x683C;&#x5F0F;&#x53C2;&#x7167;Appium&#x6D4B;&#x8BD5;&#x6846;&#x67B6;&#x3002;</p>
+<hr>
+<p>4.3&#x3001;&#x589E;&#x52A0;&#x6D4B;&#x8BD5;&#x8BBE;&#x5907;</p>
+<p>&#x76F8;&#x5E94;&#x7684;&#x6309;&#x7167;&#x683C;&#x5F0F;&#x589E;&#x52A0;nodeconfig&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#xFF0C;&#x6309;&#x7167;&#x683C;&#x5F0F;&#x7F16;&#x5199;Appium&#x542F;&#x52A8;&#x811A;&#x672C;&#xFF0C;&#x589E;&#x52A0;Appium&#x9762;&#x7248;&#x670D;&#x52A1;&#x914D;&#x7F6E;&#xFF0C;&#x8FDB;&#x884C;testng.xml&#x4E2D;&#x7684;&#x6D4B;&#x8BD5;&#x7528;&#x4F8B;&#x8BBE;&#x5907;udid&#x5206;&#x914D;&#x3002;</p>
+
+<script>console.log("plugin-popup....");document.onclick = function(e){ e.target.tagName === "IMG" && window.open(e.target.src,e.target.src)}</script><style>img{cursor:pointer}</style>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="chapter11.4.html" class="navigation navigation-prev " aria-label="Previous page: 11.4、自动化测试框架托管地址">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="chapter11.6.html" class="navigation navigation-next " aria-label="Next page: 11.6、并行测试框架托管地址">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"11.5、并行测试","level":"1.12.5","depth":2,"next":{"title":"11.6、并行测试框架托管地址","level":"1.12.6","depth":2,"path":"chapter11.6.md","ref":"chapter11.6.md","articles":[]},"previous":{"title":"11.4、自动化测试框架托管地址","level":"1.12.4","depth":2,"path":"chapter11.4.md","ref":"chapter11.4.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["back-to-top-button","chapter-fold","expandable-chapters-small","insert-logo","splitter","popup","github","github-buttons","livereload"],"pluginsConfig":{"chapter-fold":{},"github":{"url":"https://github.com/xiaolanyun","size":"50px"},"livereload":{},"splitter":{},"search":{},"popup":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"back-to-top-button":{},"github-buttons":{"buttons":[{"user":"xiaolanyun","repo":"DevOps_wiki","type":"star","size":"30px"}]},"expandable-chapters-small":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"insert-logo":{"style":"background: none; max-height: 60px; min-height: 30px","url":"http://server.zzidc.com/uploads/allimg/171120/1-1G120162T3202.png"}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"chapter11.5.md","mtime":"2019-04-27T04:13:12.938Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-04-27T06:23:18.108Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-back-to-top-button/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-chapter-fold/chapter-fold.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-insert-logo/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-github-buttons/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
