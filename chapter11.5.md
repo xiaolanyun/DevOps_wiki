@@ -2,7 +2,7 @@
 
 1、对框架进一步改进，使其实现并行测试，由于物理机资源有限，暂时只进行两台安卓设备并行测试。
 
-对BasePerpare.java进行修改，增加设备udid的获取与自动设置。
+对SelectDriver.java进行修改，增加设备udid的获取与自动设置。
 
 以selenium-server-standalone为支撑，由selenium-grid分配测试。
 
