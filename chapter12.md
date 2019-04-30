@@ -1,5 +1,9 @@
 ### 12、Maxim_Monkey
 
+设计思路
+
+![](image/12.0.PNG)
+
 1、An efficient Android Monkey Tester, available for emulators and real devices 基于遍历规则的高性能Android Monkey，适用于真机/模拟器的APP UI压力测试
 
 2、支持 Android 5，6，7，8，真机及模拟器; Android 5不支持 dfs mode

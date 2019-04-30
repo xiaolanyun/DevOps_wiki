@@ -43,7 +43,7 @@
     * [10.5、Android本地商城托管地址](chapter10.5.md)
     * [10.6、Android自动化构建](chapter10.6.md)
 * [11、Appium_自动化测试框架](chapter11.md)
-    * [11.1、设计思路](chapter11.1.md)
+    * [11.1、总体设计思路](chapter11.1.md)
     * [11.2、环境](chapter11.2.md)
     * [11.3、自动化测试框架](chapter11.3.md)
     * [11.4、自动化测试框架托管地址](chapter11.4.md)
