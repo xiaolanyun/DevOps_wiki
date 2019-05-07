@@ -1,4 +1,4 @@
-### 6.1、windos&linux_maven
+### 6.1、windows&linux_maven
 
 1、windos下maven
 
